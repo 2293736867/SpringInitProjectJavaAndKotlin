@@ -1,3 +1,3 @@
 use test;
 
-insert into user(`name`) values ('111');
+insert into user(`name`,`age`) values ('111',33);

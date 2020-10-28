@@ -3,5 +3,6 @@
 <configuration>
     <mappers>
         <mapper resource="mapper/UserDao.xml" />
+        <mapper resource="mapper/TestDao.xml" />
     </mappers>
 </configuration>

@@ -2,11 +2,11 @@ package pers
 
 import org.springframework.context.ApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext
-import pers.service.MyBatisService
+import pers.dao.UserDao
 
 fun main()
 {
     val context:ApplicationContext = ClassPathXmlApplicationContext("applicationContext.xml")
-    val service:MyBatisService = context.getBean("myBatisService") as MyBatisService
-    service.test()
+    val dao = context.getBean("userDao") as UserDao
+    println(dao.selectById(1))
 }

@@ -2,10 +2,7 @@ package pers;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import pers.dao.UserDao;
-
-import java.util.HashMap;
-import java.util.Map;
+import pers.init.dao.UserDao;
 
 public class Main {
     public static void main(String[] args) {

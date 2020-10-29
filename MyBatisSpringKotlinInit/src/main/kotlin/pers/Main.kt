@@ -2,7 +2,7 @@ package pers
 
 import org.springframework.context.ApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext
-import pers.dao.UserDao
+import pers.init.dao.UserDao
 
 fun main()
 {

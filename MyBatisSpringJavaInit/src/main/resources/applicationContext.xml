@@ -11,8 +11,6 @@
        https://www.springframework.org/schema/context/spring-context.xsd"
        >
 
-    <context:component-scan base-package="pers.dao"/>
-    <context:component-scan base-package="pers.service"/>
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/test"/>
@@ -31,7 +29,7 @@
         <property name="configLocation" value="classpath:config/mybatis-config.xml"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="pers.dao"/>
+        <property name="basePackage" value="pers.init.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 </beans>
